@@ -61,7 +61,6 @@ class App extends React.Component {
   }
   
   removeBoots(id) {
-    const products = this.state.products;
     const purchases = this.state.purchases;
     let newSum = this.state.sum;
     let newPurchases;

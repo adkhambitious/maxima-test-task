@@ -1,6 +1,5 @@
 import React from 'react';
 import './Basket.css';
-import { Card } from './Card';
 import { ReactComponent as DeleteIcon } from './icon/deleteIcon.svg'
 
 class Basket extends React.Component {

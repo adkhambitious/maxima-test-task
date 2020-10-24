@@ -1,9 +1,7 @@
 import React from 'react';
 import './Card.css';
 import { ReactComponent as BuyIcon } from './icon/buyIcon.svg';
-import {Link, Route} from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-
+import {Link} from "react-router-dom";
 
 class Card extends React.Component {
     render() {
@@ -11,7 +9,7 @@ class Card extends React.Component {
             <Link to={`/product/${this.props.id}`}>
                 <div className="card">
                     <div className="Image">
-                        <img className="Image__Img" src={this.props.imagePath}/>
+                        <img alt="Product's picture" className="Image__Img" src={this.props.imagePath}/>
                     </div> 
                     <div className="BootsInfo">
                         <p className="BootsName">
@@ -23,7 +21,6 @@ class Card extends React.Component {
                         <button className="BuyBoots" onClick={(event) => {
                             event.preventDefault();
                             this.props.buy(this.props.id)
-                            // this.props.buy(this.props.id) === ((id) => this.buy(id))(this.props.id)
                         }}>
                             <BuyIcon />
                         </button>

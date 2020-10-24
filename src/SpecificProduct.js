@@ -13,7 +13,7 @@ function SpecificProduct(props) {
         <div>
             <div className="FullCard">
                 <div className="FullImage">
-                    <img className="FullImage__Img" src={product.image}/>
+                    <img alt="Product's picture" className="FullImage__Img" src={product.image}/>
                 </div> 
                 <div className="FullBootsInfo">
                     <p className="FullBootsName">
