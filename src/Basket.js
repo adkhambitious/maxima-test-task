@@ -3,9 +3,7 @@ import './Basket.css';
 import { ReactComponent as DeleteIcon } from './icon/deleteIcon.svg'
 
 class Basket extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() {
         return (
             <div className="BasketBlock">

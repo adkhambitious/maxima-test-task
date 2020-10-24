@@ -9,7 +9,7 @@ class Card extends React.Component {
             <Link to={`/product/${this.props.id}`}>
                 <div className="card">
                     <div className="Image">
-                        <img alt="Product's picture" className="Image__Img" src={this.props.imagePath}/>
+                        <img alt="Nike" className="Image__Img" src={this.props.imagePath}/>
                     </div> 
                     <div className="BootsInfo">
                         <p className="BootsName">
