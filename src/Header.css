@@ -1,0 +1,41 @@
+.Header {
+    width: 100%;
+    height: 50px;
+    background-color: indianred;
+    display: flex;
+    flex-direction: row;
+}
+
+.SiteName {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 100%;
+    background-color: khaki;
+    font-size: 24px;
+}
+
+.Menu {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Menu__List {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.Menu__Item {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.Menu__Link {
+    text-decoration: none;
+    color: white;
+}

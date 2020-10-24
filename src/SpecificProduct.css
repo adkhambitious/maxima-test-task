@@ -1,0 +1,43 @@
+.FullCard {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(182, 182, 110);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FullImage {
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    margin: 20px;
+}
+
+.FullImage__Img {
+    width: 100%;
+    height: auto;
+}
+
+.FullBootsInfo {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FullBootsName {
+    font-size: 18px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    background-color: lightgrey;
+    margin-top: 20px;
+}
+
+.FullBuyBoots {
+    display: flex;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
