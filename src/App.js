@@ -17,7 +17,7 @@ import imagePath3 from './image/three.jpg';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    const initialPurchases = JSON.parse(localStorage.getItem("purchases"));
+    const initialPurchases = JSON.parse(localStorage.getItem("purchases")) || [];
     this.state = {
       products: [
         {
