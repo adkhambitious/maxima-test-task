@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Card.css';
 import { ReactComponent as BuyIcon } from './icon/buyIcon.svg';
 import {Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
@@ -26,35 +25,6 @@ class Card extends React.Component {
                     </Button>
                     </BootstrapCard.Body>
                 </BootstrapCard>
-                {/* <div className="card">
-                    <div className="Image">
-                        <img alt="Nike" className="Image__Img" src={this.props.imagePath}/>
-                    </div> 
-                    <div className="BootsInfo">
-                        <p className="BootsName">
-                            {this.props.name}
-                        </p>
-                        <p className="BootsCost">
-                            {this.props.cost} Р
-                        </p>
-                        
-                        <Button onClick={(event) => {
-                            event.preventDefault(); 
-                            this.props.buy(this.props.id)}}
-                            variant="success">
-                            <BuyIcon fill="#ffffff" />
-                            
-                        </Button>
-                        
-                        // <button className="BuyBoots" onClick={(event) => {
-                        //     event.preventDefault();
-                        //     this.props.buy(this.props.id)
-                        // }}>
-                        //     <BuyIcon />
-                        // </button> */}
-                    {/* </div> */}
-                    
-                {/* </div> */}
             </Link>    
         )
     }

@@ -18,9 +18,7 @@ function HomePage(props) {
                     />
                 )
             })}
-        </CardDeck>    
-            
-        
+        </CardDeck>  
     );
 }
 

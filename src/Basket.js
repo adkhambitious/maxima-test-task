@@ -4,7 +4,6 @@ import { ReactComponent as DeleteIcon } from './icon/deleteIcon.svg'
 import Card from "react-bootstrap/Card"; 
 import Button from "react-bootstrap/Button"; 
 
-
 class Basket extends React.Component {
 
     render() {
@@ -27,17 +26,7 @@ class Basket extends React.Component {
                             </Button>
                             </Card.Body>
                         </Card>
-                        
-                    ) 
-                        {/* <div>
-                            {purchase.name + "-" + } 
-                            <button className="deleteBoots" onClick={() => {
-                                this.props.removeBoots(purchase.id)
-                            }}>
-                                
-                            </button>
-                        </div> */}
-                    
+                    )                    
                 })}                
             </div>
         )
