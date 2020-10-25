@@ -8,9 +8,8 @@ import Button  from "react-bootstrap/Button";
 function SpecificProduct(props) {
     let { id } = useParams();
     const products = props.products;
-    console.log(products)
     const product = products.find((item) => item.id === Number(id));
-    console.log(product, id);
+    
     return (
         <Card>
             <Card.Img style={{width: "500px", height: "auto", marginLeft: "20%"}} variant="top" alt="Nike" src={product.image} />
@@ -26,7 +25,7 @@ function SpecificProduct(props) {
                     </Button>
             </Card.Body>
         </Card>
-    )
+    );
 }
 
 export { SpecificProduct };

@@ -20,6 +20,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     const initialPurchases = JSON.parse(localStorage.getItem("purchases")) || [];
+
     this.state = {
       products: [
         {
@@ -61,8 +62,10 @@ class App extends React.Component {
     const purchases = this.state.purchases;
     const newPurchases = [...purchases, products.find((product) => {return product.id === id})];
     let sum = newPurchases.reduce((accumulator, currentValue) => accumulator += Number(currentValue.cost), 0);    
+
     localStorage.removeItem("purchases");
     localStorage.setItem("purchases", JSON.stringify(newPurchases));
+
     this.setState({
       purchases: newPurchases,
       sum: sum,
@@ -71,12 +74,12 @@ class App extends React.Component {
   
   removeBoots(id) {
     const purchases = this.state.purchases;
-    let newSum = this.state.sum;
-    let newPurchases;
-    newPurchases = purchases.filter((item) => {return item.id !== id})
-    newSum = newPurchases.reduce((accumulator, currentValue) => accumulator + currentValue.cost, 0)
+    const newPurchases = purchases.filter((item) => {return item.id !== id});
+    const newSum = newPurchases.reduce((accumulator, currentValue) => accumulator + currentValue.cost, 0);
+  
     localStorage.removeItem("purchases");
     localStorage.setItem("purchases", JSON.stringify(newPurchases));
+
     this.setState({
       purchases: newPurchases,
       sum: newSum,
