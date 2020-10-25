@@ -13,6 +13,8 @@ import {
 import imagePath1 from './image/one.jpg';
 import imagePath2 from './image/two.jpg';
 import imagePath3 from './image/three.jpg';
+import imagePath4 from './image/four.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -39,6 +41,13 @@ class App extends React.Component {
           name: "Jordan 3",
           cost: 12000,
           image: imagePath3, 
+          description: "LoremEsse ea dolor eiusmod consequat aliqua irure voluptate proident commodo."
+        },
+        {
+          id: 4,
+          name: "Jordan 13",
+          cost: 22000,
+          image: imagePath4, 
           description: "LoremEsse ea dolor eiusmod consequat aliqua irure voluptate proident commodo."
         },
       ],

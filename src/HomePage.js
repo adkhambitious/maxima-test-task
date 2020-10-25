@@ -1,10 +1,12 @@
 import React from "react";
 import { Card } from "./Card";
 
+import CardDeck  from "react-bootstrap/CardDeck";
+
 function HomePage(props) {
     console.log(props)
     return (
-        <div>
+        <CardDeck style={{marginTop: "25px"}}>
             {props.products.map((product) => {
                 return (
                     <Card
@@ -16,7 +18,9 @@ function HomePage(props) {
                     />
                 )
             })}
-        </div>
+        </CardDeck>    
+            
+        
     );
 }
 

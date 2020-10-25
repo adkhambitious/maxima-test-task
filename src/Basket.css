@@ -1,22 +1,5 @@
 .BasketBlock {
     width: 350px;
     height: 500px;
-    background-color: orange;
-}
-
-.deleteBoots {
-    cursor: pointer;
-}
-
-.deleteBoots {
-    width: 30px;
-    height: auto;
-    
-    margin-left: 25px;
-}
-
-
-
-.deleteBoots svg {
-    
+    overflow-y: scroll;
 }
